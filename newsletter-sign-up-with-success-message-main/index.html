@@ -20,37 +20,62 @@
   <body>
     <!-- Sign-up form start -->
     <section class="main-bdy flex">
-      <div class="text-bx">
-        <h1>Stay updated!</h1>
+      <div class="main-bd-second-container">
+        <div class="text-bx">
+          <div class="textBx-container">
+            <h1>Stay updated!</h1>
 
-        <h4>Join 60,000+ product managers receiving monthly updates on:</h4>
+            <h4 class="hero_title">
+              Join 60,000+ product managers receiving monthly updates on:
+            </h4>
 
-        
+            <ul>
+              <li>
+                <img
+                  src="./assets/images/icon-list.svg"
+                  class="check-img"
+                  alt="a check mark"
+                />
+                <p>Product discovery and building what matters</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/icon-list.svg"
+                  class="check-img"
+                  alt="a check mark"
+                />
+                <p>Measuring to ensure updates are a success</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/icon-list.svg"
+                  class="check-img"
+                  alt="a check mark"
+                />
+                <p>And much more!</p>
+              </li>
+            </ul>
 
-        <ul>
-          <li >
-            <img src="./assets/images/icon-list.svg" alt="" />
-            <p>Product discovery and building what matters</p>
-          </li>
-          <li >
-            <img src="./assets/images/icon-list.svg" alt="" />
-            <p>Measuring to ensure updates are a success</p>
-          </li>
-          <li >
-            <img src="./assets/images/icon-list.svg" alt="" />
-            <p> And much more!</p>
-          </li>
-        </ul>
+            <label for="email" class="email-label"><b>Email address</b></label>
+            <input
+              id="inputVal"
+              type="email"
+              name=""
+              id=""
+              
+              placeholder="
+               email@company.com"
+            />
 
+            <button id="subBtn">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </div>
 
-        <label for="email"><b>Email address</b></label>
-        <input type="email" name="" id="" placeholder=" email@company.com">
-        
-        <button> Subscribe to monthly newsletter</button>
-      </div>
-
-      <div class="img-cont">
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <div class="img-cont">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        </div>
       </div>
     </section>
     <!-- Sign-up form end -->
@@ -64,11 +89,12 @@
     </section>
     <!-- Success message end -->
 
-    <div class="attribution">
+    <div class="attribution successMessage">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Kennie</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
