@@ -17,7 +17,7 @@ subscribeBtn.addEventListener("click", () => {
 });
 
 function newChange (){
-    this is a dummy function
+    // this is a dummy function
 }
 
 function relert(info) {
