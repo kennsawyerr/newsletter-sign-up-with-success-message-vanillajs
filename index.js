@@ -3,7 +3,7 @@
 let inputVal = document.getElementById("inputVal");
 const subscribeBtn = document.getElementById("subBtn");
 const successMessage = document.getElementById("successMessage");
- const htmlMessageViewer = document.getElementById("email-message");
+const htmlMessageViewer = document.getElementById("email-message");
 
 subscribeBtn.addEventListener("click", () => {
   // alert(inputVal.value);
@@ -26,12 +26,13 @@ subscribeBtn.addEventListener("click", () => {
 
 */
 function errorMessage(info) {
-  // alert(info);
-  // htmlMessageViewer.style.display = "block";
-  htmlMessageViewer.textContent = `${info}`;
-  setTimeout(() => {
-    htmlMessageViewer.style.border = "2px solid red";
-  }, 3500);
+  htmlMessageViewer.innerHTML = `<span class="red">${info}</span>`;
+  inputVal.style.border = "1px solid hsl(4, 100%, 67%)";
+  inputVal.style.backgroundColor = "pink";
+  // setTimeout(() => {
+  //   inputVal.style.border = "1px solid black";
+  //   inputVal.style.backgroundColor = "inherit";
+  // }, 1500);
 
   /* 
   

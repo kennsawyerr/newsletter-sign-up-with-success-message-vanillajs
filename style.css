@@ -105,7 +105,7 @@ body {
 .text-bx h1 {
   padding: 20px 0 0;
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-size: 32px;
 }
 
 .img-cont {
@@ -132,14 +132,15 @@ button {
 }
 
 #inputVal {
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
+}
+.red {
+  color: var(--Tomato);
 }
 input {
-  padding-inline: 0px 18px;
   font-size: 14px;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 input,
@@ -161,6 +162,7 @@ button {
   font-size: 9px;
   font-weight: 700;
   margin: 35px 0 0;
+  width: 100%;
 }
 /* .message {
   display: none;
@@ -189,7 +191,7 @@ button {
 }
 
 button:hover {
-  color: red;
+  background-color: var(--Tomato);
 }
 
 /* mobile  */
