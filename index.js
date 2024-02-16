@@ -3,7 +3,7 @@
 let inputVal = document.getElementById("inputVal");
 const subscribeBtn = document.getElementById("subBtn");
 const successMessage = document.getElementById("successMessage");
-const htmlMessageViewer = document.getElementById("message");
+ const htmlMessageViewer = document.getElementById("email-message");
 
 subscribeBtn.addEventListener("click", () => {
   // alert(inputVal.value);
@@ -16,7 +16,7 @@ subscribeBtn.addEventListener("click", () => {
     if (forbiddenArray.test(emailVal)) {
       successNotificationMessage;
     } else {
-      return errorMessage("please input a valid email");
+      return errorMessage("Valid email required");
     }
   }
 });
@@ -27,10 +27,10 @@ subscribeBtn.addEventListener("click", () => {
 */
 function errorMessage(info) {
   // alert(info);
-  htmlMessageViewer.style.display = "block";
-  htmlMessageViewer.innerHTML = `<h1>${info}</h1>`;
+  // htmlMessageViewer.style.display = "block";
+  htmlMessageViewer.textContent = `${info}`;
   setTimeout(() => {
-    htmlMessageViewer.style.display = "none";
+    htmlMessageViewer.style.border = "2px solid red";
   }, 3500);
 
   /* 

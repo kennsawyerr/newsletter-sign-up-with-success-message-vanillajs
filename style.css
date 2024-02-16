@@ -132,7 +132,8 @@ button {
 }
 
 #inputVal {
-  padding-inline-start: 40px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
 }
 input {
   padding-inline: 0px 18px;
@@ -157,11 +158,11 @@ button {
 }
 .email-label {
   display: block;
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 700;
   margin: 35px 0 0;
 }
-.message {
+/* .message {
   display: none;
   background-color: rgb(233, 143, 143);
   border: 1px solid red;
@@ -173,7 +174,7 @@ button {
   transform: translate(-50%, -350%);
   padding: 20px;
   font-size: 21px;
-}
+} */
 
 /* modal */
 
