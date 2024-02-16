@@ -14,7 +14,7 @@ subscribeBtn.addEventListener("click", () => {
   } else {
     const forbiddenArray = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (forbiddenArray.test(emailVal)) {
-      successNotificationMessage;
+      successNotificationMessage("Validation successful");
     } else {
       return errorMessage("Valid email required");
     }
@@ -26,7 +26,7 @@ subscribeBtn.addEventListener("click", () => {
 
 */
 function errorMessage(info) {
-  htmlMessageViewer.innerHTML = `<span class="red">${info}</span>`;
+  htmlMessageViewer.innerHTML = `<p class="red">${info}</p>`;
   inputVal.style.border = "1px solid hsl(4, 100%, 67%)";
   inputVal.style.backgroundColor = "pink";
   // setTimeout(() => {
@@ -42,11 +42,14 @@ function errorMessage(info) {
   */
 }
 
-const successNotificationMessage = () => {
+const successNotificationMessage = (message) => {
   /*
     hide  email signup page
     display => block    
     */
+  htmlMessageViewer.innerHTML = `<p class="green">${message}</p>`;
+  inputVal.style.border = "1px solid green";
+  inputVal.style.backgroundColor = " rgb(182, 252, 182)";
 };
 
 /*  for some reason, input no dey show  . Edit . just found out that alert accepts only one argument and basicaly discards the reamining
