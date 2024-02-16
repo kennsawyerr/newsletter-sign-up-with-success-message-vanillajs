@@ -68,12 +68,17 @@ li {
 .check-img {
 }
 
-.main-bdy {
+body {
   margin: 0 auto;
-  border: 4px solid green;
+
   background-color: var(--Charcoal-Grey);
   width: 100%;
   height: 100%;
+}
+
+.main-bdy {
+  width: 50%;
+  margin: 0 auto;
 }
 .main-bd-second-container {
   display: flex;
@@ -83,6 +88,23 @@ li {
   border: 30px solid var(--White);
   border-radius: 50px;
   background-color: var(--White);
+}
+
+@media screen and (max-width: 500px) {
+  .main-bd-second-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin: auto;
+    border-radius: 0px;
+    border: 0px;
+  }
+
+  .img-cont {
+    max-width: 400px;
+    border-radius: 0;
+    background-color: var(--White);
+  }
 }
 .text-bx {
   background-color: var(--White);
@@ -125,6 +147,9 @@ button {
   font-size: 12px;
 }
 
+#inputVal {
+  padding-inline-start: 40px;
+}
 input {
   padding-inline: 0px 18px;
   font-size: 14px;
@@ -152,6 +177,19 @@ button {
   font-weight: 700;
   margin: 35px 0 0;
 }
+.message {
+  display: none;
+  background-color: rgb(233, 143, 143);
+  border: 1px solid red;
+  width: fit-content;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -350%);
+  padding: 20px;
+  font-size: 21px;
+}
 
 /* modal */
 
@@ -160,3 +198,13 @@ button {
   visibility: hidden;
   background-color: red;
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  color: red;
+}
+
+/* mobile  */
