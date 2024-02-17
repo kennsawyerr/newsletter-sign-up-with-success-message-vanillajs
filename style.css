@@ -125,8 +125,6 @@ body {
 
 .textBx-container {
   width: 85%;
-
-  border: 1px solid yellow;
   margin: 0 auto;
 }
 
@@ -231,7 +229,7 @@ label {
     flex-direction: column-reverse;
     width: 80%;
     align-items: center;
-    padding: auto 15px;
+    padding: auto 5px;
     gap: 0px;
     margin: auto;
     border-radius: 0px;
