@@ -170,19 +170,6 @@ button {
   line-height: 1.5;
 }
 
-/* .message {
-  display: none;
-  background-color: rgb(233, 143, 143);
-  border: 1px solid red;
-  width: fit-content;
-  z-index: 99;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -350%);
-  padding: 20px;
-  font-size: 21px;
-} */
 
 /* modal */
 
@@ -229,7 +216,7 @@ label {
     flex-direction: column-reverse;
     width: 80%;
     align-items: center;
-    padding: auto 5px;
+    
     gap: 0px;
     margin: auto;
     border-radius: 0px;
