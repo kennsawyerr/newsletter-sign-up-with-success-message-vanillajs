@@ -229,8 +229,9 @@ label {
   .main-bd-second-container {
     display: flex;
     flex-direction: column-reverse;
-    width: 80%;
+    width: 90%;
     align-items: center;
+    padding: auto 15px;
     gap: 0px;
     margin: auto;
     border-radius: 0px;
