@@ -229,7 +229,7 @@ label {
   .main-bd-second-container {
     display: flex;
     flex-direction: column-reverse;
-    width: 90%;
+    width: 80%;
     align-items: center;
     padding: auto 15px;
     gap: 0px;
