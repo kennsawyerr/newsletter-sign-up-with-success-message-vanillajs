@@ -207,6 +207,7 @@ label {
   width: 100%;
 }
 
+/* new styles recommended from freecodementor */
 body {
   min-height: 100vh;
   display: flex;
