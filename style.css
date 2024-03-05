@@ -207,6 +207,13 @@ label {
   width: 100%;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* mobile  */
 
 @media screen and (max-width: 500px) {
